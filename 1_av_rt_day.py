@@ -25,7 +25,7 @@ chart_def = """
         reversed: false,
         title: {
             enabled: true,
-            text: 'Altitude'
+            text: 'Date'
         },
         labels: {
             format: '{value} km'
@@ -38,7 +38,7 @@ chart_def = """
     },
     yAxis: {
         title: {
-            text: 'Temperature'
+            text: 'Average Rating'
         },
         labels: {
             format: '{value}°'
@@ -53,7 +53,7 @@ chart_def = """
     },
     tooltip: {
         headerFormat: '<b>{series.name}</b><br/>',
-        pointFormat: '{point.x} km: {point.y}°C'
+        pointFormat: '{point.x} {point.y}'
     },
     plotOptions: {
         spline: {
@@ -63,7 +63,7 @@ chart_def = """
         }
     },
     series: [{
-        name: 'Temperature',
+        name: 'Average Rating',
         data: [[0, 15], [10, -50], [20, -56.5], [30, -46.5], [40, -22.1],
             [50, -2.5], [60, -27.7], [70, -55.7], [80, -76.5]]
     }]
